@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap CSS</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <!-- navigasi -->
+    <nav class="navbar bg-body-tertiary bg-light navbar-expand-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" width="180" loading="sociolla">
+            </a>
+
+              <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#produk">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#promo">Promo</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="nav-link" href="#promo">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <!-- slider / carousel -->
+      <div class="container mt-4 mb-3">
+        <div id="carouselExample" class="carousel slide">
+
+        <!-- isi dari slider -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/katalog-1.jpeg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/katalog-2.avif" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/katalog-3.avif" class="d-block" alt="...">
+          </div>
+        </div>
+
+        <!-- tombol kiri kanan -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container bg-light">
+        <h1 class="display-1">Promo Murah!</h1>
+
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+
+        <hr class="my-4">
+
+        <p>
+          It uses utility classes for typography and spacing to space content out within the larger container.
+
+        </p>
+
+        <a class="btn btn-outline-danger btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
+
+    <!-- card -->
+    <div class="container pt-5">
+      <div class="row" id="produk">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="images/d'alba.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">d'Alba</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Rp. 208.000-422.500</h5>
+              <a href="#" class="btn btn-primary">Add To Bag</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="images/skintific.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SKINTIFIC</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Rp. 138.780</h5>
+              <a href="#" class="btn btn-primary">Add To Bag</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="images/g2g.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Glad2Glow</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title ">Rp. 40.000</h5>
+              <a href="#" class="btn btn-primary">Add To Bag</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container" id="promo">
+      <div class="row text-center bg-info text-info-emphasis">
+        <div class="col">
+          <h1>Discount 80%</h1>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-4">
+          <img src="images/skintific-bundle.avif" alt="">
+        </div>
+        <div class="col-lg-8">
+          <table class="table mt-3 table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Skintific - Day and Night Moisture Gel Set</th>
+                <th scope="col">Diskon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Glycolic Acid - Daily Clarifying Toner</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>skintific</td>
+                <td>70%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>skiintific</td>
+                <td>80%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-info text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p> <strong>Sociolla.id</strong>  <br> Jakarta, Jawa barat <br> Indonesia 61234</p>
+          </div>
+          <div class="col-lg-4">
+            <p> <strong>Pembayaran</strong>  
+                <br> BCA <br> 12345678 
+                <br> BRI <br> 12345678
+                <br> Mandiri <br> 12345678 </p>
+          </div>
+          <div class="col-lg-4"></div>
+            <p> <strong>About</strong>  
+                <br> Sociolla didirikan pada tahun 2010 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Kontak Kami</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Alamat</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Kota</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Kode Pos</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div id="emailHelp" class="form-text">We'll never share your data with anyone else.</div>
+            </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <script 
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+          crossorigin="anonymous">
+        </script>
+        <script 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+          integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+          crossorigin="anonymous">
+        </script>
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
