@@ -1,30 +1,28 @@
 <?php 
 
-    require_once "../function.php";
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
 
-    $sql = "SELECT * FROM tblkategori WHERE idkategori";
-    $result = mysqli_query($koneksi, $sql);
+        $sql = "SELECT * FROM tblkategori WHERE idkategori = $id";
 
-    $row = mysqli_fetch_assoc($result);
-
-    // $kategori = 'Crab Corn Soup';
-
-    // $id = 15;
-
-    // $sql = "UPDATE tblkategori SET kategori = '$kategori' WHERE idkategori = $id";
-
-    // $result = mysqli_query($koneksi, $sql);
-
-    // echo $sql;
+        $row = $db->getITEM($sql);
+    }
 
 ?>
 
-<form action="" method="post">
-    kategori :
-    <input type="text" name="kategori" value="<?php echo $row['kategori']?>">
-    <br>
-    <input type="submit" name="simpan" value="simpan">
-</form>
+<h3> Update Kategori </h3>
+<div class="form-group">
+    <form action="" method="post">
+        <div class="form-group w-50">
+            <label for="">Nama Kategori</label>
+            <input type="text" name="kategori" required value="<?php echo $row['kategori'] ?>" class="form-control">
+        </div>
+
+        <div>
+            <input type="submit" name="simpan" value="simpan" class="btn btn-primary">
+        </div>
+    </form>
+</div>
 
 <?php 
 
@@ -33,9 +31,9 @@
 
         $sql = "UPDATE tblkategori SET kategori = '$kategori' WHERE idkategori = $id";
 
-        $result = mysqli_query($koneksi, $sql);
+        $db->runSQL($sql);
 
-        header("location:http://localhost/phpsmk/restoran/kategori/select.php");
+        header("location:?f=kategori&m=select");
     }
 
 ?>
