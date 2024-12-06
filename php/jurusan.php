@@ -1,1 +1,0 @@
-<h3>Jurusan SMK N 2 Buduran</h3>
