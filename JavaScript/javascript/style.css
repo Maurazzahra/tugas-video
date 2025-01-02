@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.header {
+    margin: 1%;
+}
+
+.nav-left ul, 
+.nav-right ul {
+    list-style: none;
+}
+
+.nav-left a, 
+.nav-right a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #000;
+}
+
+.nav-left a:hover {
+    background: rgb(137, 130, 130)
+}
+
+.nav-right a:hover {
+    background: rgb(137, 130, 130)
+}
+
+@media screen and (min-width: 560px){
+    .header {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        margin-top: 1%;
+        justify-content: space-between;
+    }
+
+    .nav-left ul {
+        display: flex;
+    }
+
+    .nav-right ul {
+        display: flex;
+    }
+
+    .nav-left, 
+    .nav-right {
+        background-color: none;
+    }
+
+    .nav-left a, 
+    .nav-right a {
+        color: black;
+    }
+}
+
+/* main */
+.main {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main-left img {
+    width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+.main-right {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 560px){
+    .main{
+        width: 960px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .main-left img {
+        width: 1000px;
+        align-items: center;
+    }
+
+    .main-right {
+        margin: auto;
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+
+/* produk */
+.display {
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(234, 71, 160);
+}
+
+.image img {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.produk-content {
+    text-align: center;
+    margin: 10px;
+}
+
+.deskripsi {
+    font-size: 13px;
+}
+
+@media (min-width: 560px){
+    .produk {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produk-content {
+        height: 300px;
+    }
+
+    .produk h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .produk-content h3 {
+        color: red;
+        font-size: small;
+    }
+
+    .image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .image img {
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .display {
+        font-size: 20px;
+    }
+}
+
+.btn-beli > button {
+    font-size: medium;
+    width: 50px;
+    height: 30px;
+}
+
+/* informasi */
+.info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-content {
+    height: 70px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 50px;
+    display: block;
+    margin-right: 10px;
+}
+.info-isi p {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 560px){
+    .info {
+        width: 960px;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
+
+/* medsos */
+.medsos {
+    margin-bottom: 100px;
+}
+
+.medsos-icon img {
+    width: 30px;
+    margin: 10px;
+}
+
+.medsos-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.medsos-isi {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: grey;
+}
+
+.medsos-form {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medsos-form form input {
+    width: 200px;
+    height: 30px;
+    background: rgb(253, 223, 241);
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -4px;
+}
+
+.medsos-form form input [type="email"] {
+    padding: 50px;
+}
+
+.medsos-form form button {
+    height: 30px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: rgb(253, 223, 241);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (min-width: 560px) {
+    .medsos {
+        width: 960px;
+        margin: auto;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+}
+
+/* footer */
+footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.logo-bank img {
+    width: 70px;
+    padding: 15px;
+}
+
+.customer-care {
+    flex: 1;
+}
+
+.customer-care li {
+    list-style: none;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.customer-care h5 {
+    margin-top: 7px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.customer-care p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+}
+
+.payment {
+    flex: 1;
+}
+
+.sitemap {
+    flex: 1;
+}
+
+.sitemap li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.sitemap li a {
+    text-decoration: none;
+}
+
+.customer-care p {
+    font-size: 12px;
+}
+
+.sitemap a {
+    font-size: 12px;
+}
+
+.bank {
+    padding-bottom: 15px;
+}
+
+@media (min-width: 560px) {
+    footer {
+        width: 960px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .sitemap h2, 
+    .customer-care h2,
+    .payment-isi h2 {
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

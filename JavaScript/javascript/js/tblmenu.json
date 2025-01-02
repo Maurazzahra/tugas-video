@@ -1,0 +1,36 @@
+[
+    {
+
+    "idmenu" : 1,
+    "idkategori" : 1,
+    "menu" : "Strawberry",
+    "harga" : 10000,
+    "warna" : ["Pink", "Hijau", "Biru"],
+    "stock" : true,
+    "keterangan" : null
+
+    },
+    {
+
+    "idmenu" : 2,
+    "idkategori" : 1,
+    "menu" : "Melon",
+    "harga" : 12000,
+    "warna" : ["Kuning", "Oranye"],
+    "stock" : false,
+    "keterangan" : null
+
+    },
+    {
+
+    "idmenu" : 3,
+    "idkategori" : 1,
+    "menu" : "Bluberry",
+    "harga" : 35000,
+    "warna" : ["Pink", "Biru"],
+    "stock" : false,
+    "keterangan" : null
+
+    }
+
+]
